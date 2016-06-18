@@ -1,0 +1,9 @@
+<h1>Chirp</h1>
+<p>Find me in app/views/chirps/show.html.erb</p>
+<p><%= @chirp.body %></p>
+<p> - <i><%= @chirp.author %></i></p>
+<%= image_tag @chirp.pic.url, width: '100' %>
+<br/>
+<%= link_to "Edit this chirp", edit_chirp_path(@chirp) %>
+<br>
+<%= link_to "DELETE", chirp_path(@chirp), method: 'delete' %>
